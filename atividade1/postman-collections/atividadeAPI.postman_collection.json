@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "24305dd9-894a-4994-a555-1de1ffc750b4",
+		"name": "atividadeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27353138",
+		"_collection_link": "https://www.postman.com/mission-physicist-33650065/workspace/api-serratec/collection/27353138-24305dd9-894a-4994-a555-1de1ffc750b4?action=share&creator=27353138&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Instrutor",
+			"item": [
+				{
+					"name": "GET All Instrutores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/instrutores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"instrutores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Instrutor By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/instrutores/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"instrutores",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SAVE Instrutor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rg\":\"33333333\",\r\n    \"nome\":\"Yago\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/instrutores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"instrutores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Instrutor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idInstrutor\": 1,\r\n    \"rg\": 111111111,\r\n    \"nome\": \"Paulo Vitor\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/instrutores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"instrutores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Instrutor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/instrutores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"instrutores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Turma",
+			"item": [
+				{
+					"name": "GET All Turmas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/turmas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"turmas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Turma By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/turmas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"turmas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Turma",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome_disciplina\": \"Banco de Dados\",\r\n    \"dia_semana\": \"quarta-feira\",\r\n    \"instrutor\": {\r\n        \"id\": 1\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/turmas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"turmas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Turma",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/turmas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"turmas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SAVE Turma",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dia_semana\": \"quarta-feira\",\r\n    \"nome_disciplina\": \"Java\",\r\n    \"instrutor\":{\r\n        \"id\": 3\r\n    }\r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/turmas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"turmas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Telefone",
+			"item": [
+				{
+					"name": "GET All Telefones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/telefones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"telefones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Telefone By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/telefones/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"telefones",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Telefone",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"numero\": 123456789,\r\n    \"instrutor\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/telefones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"telefones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Telefone",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/telefones/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"telefones",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SAVE Telefone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero\": \"777777777\",\r\n    \"instrutor\":{\r\n        \"id\": 3\r\n    }\r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/atividadeAPI/telefones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"atividadeAPI",
+								"telefones"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
